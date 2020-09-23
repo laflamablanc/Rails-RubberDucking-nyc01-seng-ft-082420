@@ -1,0 +1,10 @@
+<h3> <%= @student.name %> </h3>
+
+Mod: <%= @student.mod %>
+<br>
+Duck:
+  <% if @student.duck %>
+  <%= @student.duck.name %>
+  <% else %>
+    No Duck
+  <% end %>

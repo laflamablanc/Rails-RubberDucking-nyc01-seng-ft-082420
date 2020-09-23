@@ -3,6 +3,7 @@ class CreateDucks < ActiveRecord::Migration[5.2]
     create_table :ducks do |t|
       t.string :name
       t.string :description
+      t.string :student_id
 
       t.timestamps
     end

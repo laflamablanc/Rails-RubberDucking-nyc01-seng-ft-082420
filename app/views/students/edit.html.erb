@@ -1,0 +1,11 @@
+<h3> Student Edit Form </h3>
+
+<%= form_for @student do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :mod %>
+  <%= f.number_field :mod, within: 1..5 %>
+  <br>
+  <%= f.submit "Create Student" %>
+<% end %>
